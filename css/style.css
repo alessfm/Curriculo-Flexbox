@@ -1,3 +1,118 @@
-body{
-    font-family: "IBM Plex Mono", monospace;
+body {
+  font-size: 16px;
+  background-color: #f4f4f4;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 14px;
+  color: gray;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+a {
+  color: blue;
+}
+
+.text,
+.text-m {
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.text-m {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin: 4rem 10rem;
+  padding: 3rem;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  .profile-pic {
+    font-size: 48px;
+    font-weight: bold;
+
+    .logo {
+      padding: 0.5rem 1rem;
+      background-color: #f6f64d;
+    }
+  }
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6rem;
+
+  .content-start,
+  .education {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.7rem;
+
+      .job-title {
+        font-size: 18px;
+        color: #444244;
+        font-weight: bold;
+      }
+
+      .education-title {
+        font-size: 16px;
+        color: #444244;
+        font-weight: bold;
+      }
+
+      .job-company {
+        font-size: 15px;
+        color: gray;
+        font-style: italic;
+      }
+
+      .date-location {
+        span {
+          font-size: 13px;
+          padding: 0.2rem 0.5rem;
+          color: #706e6e;
+          border-radius: 8px;
+          background-color: #f6eded;
+        }
+      }
+
+      .institution,
+      .description,
+      .contact-info {
+        font-size: 14px;
+      }
+    }
+  }
 }
